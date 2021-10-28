@@ -1,0 +1,123 @@
+
+/*Code to place a background image */
+html{
+	background-image: url("background1.jfif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*This is where i have written the code to style my header */
+#header{
+	height: 100px;
+	text-align: center;
+	border: solid black;
+	background-image: url("background1.jfif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 99.5%;
+	
+	
+}
+h1{
+	padding-top: 10px;
+}
+
+
+/* col1, col2, and col3 and the ids for my columns and all have similair styling */
+#col1{
+	background-color: transparent;
+	text-align: center;
+	border: solid black;
+	font-weight: bold;
+}
+
+#col2{
+	background-color: transparent;
+	text-align: center;
+	border: solid black;
+	
+}
+
+#col3{
+	background-color: transparent;
+	text-align: center;
+	margin: top 10px;
+	border: solid black;
+	font-weight: bold;
+}
+
+.main{
+	width: 80%;
+	float: right;
+	height: 500px;
+}
+
+/*	Used to center my table so it doesnt move when the screen is changed size */
+table{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*	used to change the content inside the table */
+td, th{
+	padding: 5px;
+	border: 1px black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul, li{
+	padding: 5px;
+	/* used to remove the dots from a li */
+	list-style-type: none;
+}
+	/* centers my image */
+img{
+	text-align: center;
+}
+/*class is part of my 3 col ids, means they all will fit on the page together */
+.row1{
+	width: 99.5%;
+	height: 300px;
+	float: left;
+}
+.row2{
+	width: 49.6%;
+	height: 230px;
+	float: left;
+}
+/* The @media tag allows me to specify when the content will change place according to a given pixel amount. */
+@media (max-width: 1200px){
+	#col1{
+		width: auto;
+		float: none;
+		background-color: transparent;
+	}
+	#col2{	
+		width: auto;
+		float: none;
+		text-align: center;
+		background-color: transparent;
+		font-weight: bold;
+	}
+	#col3{
+		width: auto;
+		float: none;
+		text-align: center;
+		background-color: transparent;
+		font-weight: bold;
+	}
+	
+	/* same code for a background image at the top, just a different image so we can see more clearly the responsive design. */
+html{
+	background-image: url("background2.jfif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header{
+	background-image: url("background1.jfif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+} 
