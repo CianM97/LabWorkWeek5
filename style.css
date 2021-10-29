@@ -56,12 +56,14 @@ table{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	border: solid black;
+	
 }
 
 /*	used to change the content inside the table */
 td, th{
 	padding: 5px;
-	border: 1px black;
+	border: 1px solid black;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
